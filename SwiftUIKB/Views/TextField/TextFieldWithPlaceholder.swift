@@ -22,3 +22,4 @@ struct TextFieldWithPlaceholder_Previews: PreviewProvider {
         TextFieldWithPlaceholder(placeholderInput: "Hi Hi").previewLayout(.sizeThatFits)
     }
 }
+

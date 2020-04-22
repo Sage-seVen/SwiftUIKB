@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F244C26244F3F1A00D66631 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F244C25244F3F1A00D66631 /* NewsResponse.swift */; };
+		1F244C28244F3F6E00D66631 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F244C27244F3F6E00D66631 /* ArticleViewModel.swift */; };
+		1F244C2A244F401900D66631 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F244C29244F401900D66631 /* ArticleListViewModel.swift */; };
+		1F244C2C244F409100D66631 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F244C2B244F409100D66631 /* WebService.swift */; };
+		1F244C2F244F410600D66631 /* MVVMImplementedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F244C2E244F410600D66631 /* MVVMImplementedView.swift */; };
 		1F6496CC2441FE3F00384244 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4933C5C6243D75B5002DA38A /* PasswordChecker.swift */; };
 		1F6496CF2442002400384244 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6496CE2442002400384244 /* SliderView.swift */; };
 		1F6496D12442003200384244 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6496D02442003200384244 /* PickerView.swift */; };
@@ -53,6 +58,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F244C25244F3F1A00D66631 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		1F244C27244F3F6E00D66631 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		1F244C29244F401900D66631 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		1F244C2B244F409100D66631 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		1F244C2E244F410600D66631 /* MVVMImplementedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMImplementedView.swift; sourceTree = "<group>"; };
 		1F6496CE2442002400384244 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		1F6496D02442003200384244 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		1F87B6A42431D23C00CDEBEA /* TextWithRoundedCornersAndBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithRoundedCornersAndBorder.swift; sourceTree = "<group>"; };
@@ -111,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F244C2D244F409600D66631 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1F244C2B244F409100D66631 /* WebService.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
 		1F6496CD2442000900384244 /* Reuse Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				4933C5C6243D75B5002DA38A /* PasswordChecker.swift */,
+				1F244C27244F3F6E00D66631 /* ArticleViewModel.swift */,
+				1F244C29244F401900D66631 /* ArticleListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				4951C0BE2445519400A22BA8 /* TableView.swift */,
+				1F244C2E244F410600D66631 /* MVVMImplementedView.swift */,
 			);
 			path = TableViews;
 			sourceTree = "<group>";
@@ -222,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				4951C0C4244557E100A22BA8 /* DataModel.swift */,
+				1F244C25244F3F1A00D66631 /* NewsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +270,7 @@
 				1F9B74702440A74C00AF0E06 /* Custom Fonts */,
 				4951C0C6244557E700A22BA8 /* Model */,
 				4933C5C8243D75C5002DA38A /* ViewModel */,
+				1F244C2D244F409600D66631 /* Network Manager */,
 				497130DB242C7DB300DBC959 /* Views */,
 				497130C3242C701B00DBC959 /* AppDelegate.swift */,
 				497130C5242C701B00DBC959 /* SceneDelegate.swift */,
@@ -371,17 +394,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4951C0AF2445213800A22BA8 /* StepperView.swift in Sources */,
+				1F244C2F244F410600D66631 /* MVVMImplementedView.swift in Sources */,
+				1F244C26244F3F1A00D66631 /* NewsResponse.swift in Sources */,
 				4951C0A92444287900A22BA8 /* ButtonWithAlert.swift in Sources */,
 				1F6496CC2441FE3F00384244 /* PasswordChecker.swift in Sources */,
 				4951C0BF2445519400A22BA8 /* TableView.swift in Sources */,
 				4933C5CE243D9943002DA38A /* TextFieldTyped.swift in Sources */,
 				4951C0B4244528B000A22BA8 /* GradientTwo.swift in Sources */,
 				4951C0C22445553700A22BA8 /* CollectionView.swift in Sources */,
+				1F244C2C244F409100D66631 /* WebService.swift in Sources */,
 				4933C5BE242CB0EB002DA38A /* TextFieldWithDescription.swift in Sources */,
 				497130C4242C701B00DBC959 /* AppDelegate.swift in Sources */,
 				1F6496CF2442002400384244 /* SliderView.swift in Sources */,
 				4951C0AD24451CA100A22BA8 /* DatePickerView.swift in Sources */,
 				4951C0BD2445381F00A22BA8 /* Toggles.swift in Sources */,
+				1F244C2A244F401900D66631 /* ArticleListViewModel.swift in Sources */,
 				497130E1242C927000DBC959 /* TextWithRoundedCorners.swift in Sources */,
 				1F9B74722440AA1300AF0E06 /* CustomSizeImageView.swift in Sources */,
 				1F9B746D244059FF00AF0E06 /* ContactCardImageView.swift in Sources */,
@@ -391,6 +418,7 @@
 				4951C0A2243E565900A22BA8 /* TextFieldClosures.swift in Sources */,
 				1F6496D12442003200384244 /* PickerView.swift in Sources */,
 				497130C6242C701B00DBC959 /* SceneDelegate.swift in Sources */,
+				1F244C28244F3F6E00D66631 /* ArticleViewModel.swift in Sources */,
 				497130E3242C92EC00DBC959 /* TextAndImageWithRoundedCorners.swift in Sources */,
 				4933C5BC242CB099002DA38A /* TextFieldWithFixedSize.swift in Sources */,
 				4933C5C0242CB11A002DA38A /* TextFieldWithSideDescription.swift in Sources */,

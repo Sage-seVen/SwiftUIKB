@@ -42,6 +42,9 @@ struct ContentView: View {
                         NavigationLink(destination: TableView()) {
                             Text("TableViews")
                         }
+                        NavigationLink(destination: MVVMImplementedView()) {
+                            Text("MVVM ImplementedTableView")
+                        }
                         NavigationLink(destination: CollectionView()) {
                             Text("CollectionViews")
                         }                    }
