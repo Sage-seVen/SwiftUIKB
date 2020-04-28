@@ -55,6 +55,12 @@
 		497130E3242C92EC00DBC959 /* TextAndImageWithRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497130E2242C92EC00DBC959 /* TextAndImageWithRoundedCorners.swift */; };
 		497130E5242C959900DBC959 /* TextWithRectCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497130E4242C959900DBC959 /* TextWithRectCorners.swift */; };
 		497130E7242C95C800DBC959 /* TextAndImageWithRectCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497130E6242C95C800DBC959 /* TextAndImageWithRectCorners.swift */; };
+		498164E62458802B00602C49 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498164E52458802B00602C49 /* Transitions.swift */; };
+		498164E92458AC7000602C49 /* AnimationOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498164E82458AC7000602C49 /* AnimationOne.swift */; };
+		498164EB2458AE0500602C49 /* AnimationTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498164EA2458AE0500602C49 /* AnimationTwo.swift */; };
+		498164ED2458B57D00602C49 /* ExplicitAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498164EC2458B57D00602C49 /* ExplicitAnimation.swift */; };
+		498164EF2458B81100602C49 /* BasicTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498164EE2458B81100602C49 /* BasicTransition.swift */; };
+		498164F12458BABC00602C49 /* AnimationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498164F02458BABC00602C49 /* AnimationList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +114,12 @@
 		497130E2242C92EC00DBC959 /* TextAndImageWithRoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndImageWithRoundedCorners.swift; sourceTree = "<group>"; };
 		497130E4242C959900DBC959 /* TextWithRectCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithRectCorners.swift; sourceTree = "<group>"; };
 		497130E6242C95C800DBC959 /* TextAndImageWithRectCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndImageWithRectCorners.swift; sourceTree = "<group>"; };
+		498164E52458802B00602C49 /* Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
+		498164E82458AC7000602C49 /* AnimationOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOne.swift; sourceTree = "<group>"; };
+		498164EA2458AE0500602C49 /* AnimationTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTwo.swift; sourceTree = "<group>"; };
+		498164EC2458B57D00602C49 /* ExplicitAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimation.swift; sourceTree = "<group>"; };
+		498164EE2458B81100602C49 /* BasicTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTransition.swift; sourceTree = "<group>"; };
+		498164F02458BABC00602C49 /* AnimationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +314,7 @@
 				4951C0B92445323F00A22BA8 /* ImageView */,
 				4951C0C02445519E00A22BA8 /* TableViews */,
 				4951C0C32445554000A22BA8 /* CollectionViews */,
+				498164E72458A0CD00602C49 /* Animations */,
 				1F6496CD2442000900384244 /* Reuse Components */,
 				4951C0B22445271000A22BA8 /* Gradients */,
 			);
@@ -319,6 +332,19 @@
 				1F87B6A42431D23C00CDEBEA /* TextWithRoundedCornersAndBorder.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		498164E72458A0CD00602C49 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				498164F02458BABC00602C49 /* AnimationList.swift */,
+				498164E82458AC7000602C49 /* AnimationOne.swift */,
+				498164EA2458AE0500602C49 /* AnimationTwo.swift */,
+				498164EC2458B57D00602C49 /* ExplicitAnimation.swift */,
+				498164EE2458B81100602C49 /* BasicTransition.swift */,
+				498164E52458802B00602C49 /* Transitions.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,18 +428,22 @@
 				4933C5CE243D9943002DA38A /* TextFieldTyped.swift in Sources */,
 				4951C0B4244528B000A22BA8 /* GradientTwo.swift in Sources */,
 				4951C0C22445553700A22BA8 /* CollectionView.swift in Sources */,
+				498164EB2458AE0500602C49 /* AnimationTwo.swift in Sources */,
 				1F244C2C244F409100D66631 /* WebService.swift in Sources */,
 				4933C5BE242CB0EB002DA38A /* TextFieldWithDescription.swift in Sources */,
 				497130C4242C701B00DBC959 /* AppDelegate.swift in Sources */,
 				1F6496CF2442002400384244 /* SliderView.swift in Sources */,
+				498164E92458AC7000602C49 /* AnimationOne.swift in Sources */,
 				4951C0AD24451CA100A22BA8 /* DatePickerView.swift in Sources */,
 				4951C0BD2445381F00A22BA8 /* Toggles.swift in Sources */,
 				1F244C2A244F401900D66631 /* ArticleListViewModel.swift in Sources */,
 				497130E1242C927000DBC959 /* TextWithRoundedCorners.swift in Sources */,
 				1F9B74722440AA1300AF0E06 /* CustomSizeImageView.swift in Sources */,
+				498164ED2458B57D00602C49 /* ExplicitAnimation.swift in Sources */,
 				1F9B746D244059FF00AF0E06 /* ContactCardImageView.swift in Sources */,
 				1F87B6A52431D23C00CDEBEA /* TextWithRoundedCornersAndBorder.swift in Sources */,
 				497130DF242C824D00DBC959 /* TextFieldView.swift in Sources */,
+				498164E62458802B00602C49 /* Transitions.swift in Sources */,
 				4933C5CA243D7B18002DA38A /* PasswordStrengthView.swift in Sources */,
 				4951C0A2243E565900A22BA8 /* TextFieldClosures.swift in Sources */,
 				1F6496D12442003200384244 /* PickerView.swift in Sources */,
@@ -425,12 +455,14 @@
 				4951C0A72443D1D700A22BA8 /* NormalButton.swift in Sources */,
 				497130E7242C95C800DBC959 /* TextAndImageWithRectCorners.swift in Sources */,
 				1F9B74742440AE6F00AF0E06 /* ImageViewList.swift in Sources */,
+				498164F12458BABC00602C49 /* AnimationList.swift in Sources */,
 				4951C0B624452A8600A22BA8 /* GradientThree.swift in Sources */,
 				4951C0AB24444D0900A22BA8 /* TextFieldWithPlaceholder.swift in Sources */,
 				4933C5B9242C9AAE002DA38A /* TextView.swift in Sources */,
 				4933C5CF243D9943002DA38A /* TextFieldDelegates.swift in Sources */,
 				4933C5C2242CB14A002DA38A /* SecureTextField.swift in Sources */,
 				4951C0C5244557E100A22BA8 /* DataModel.swift in Sources */,
+				498164EF2458B81100602C49 /* BasicTransition.swift in Sources */,
 				4933C5C4243A5355002DA38A /* FormView.swift in Sources */,
 				4951C0B82445323100A22BA8 /* IconImageview.swift in Sources */,
 				4951C0B12445270300A22BA8 /* GradientOne.swift in Sources */,

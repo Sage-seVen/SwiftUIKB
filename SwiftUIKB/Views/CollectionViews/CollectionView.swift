@@ -17,7 +17,7 @@ struct CollectionView: View {
         //Text("Work in Progress!! 🛠")
         List {
             ForEach(data) { items in
-                ForEach(0..<2) { item in
+                ForEach(0..<3) { item in
                     CollectionViewComponent(data: items)
                 }
             }
@@ -31,7 +31,7 @@ struct CollectionViewComponent: View {
     var body: some View {
         VStack {
             HStack {
-                ForEach(0..<2) { items in
+                ForEach(0..<3) { items in
                     Spacer()
                     Image(systemName: self.data.imageName)
                         .resizable()
@@ -42,6 +42,8 @@ struct CollectionViewComponent: View {
                 }.padding(.bottom, 16)
             }
             HStack {
+                Spacer()
+                Text(self.data.name)
                 Spacer()
                 Text(self.data.name)
                 Spacer()

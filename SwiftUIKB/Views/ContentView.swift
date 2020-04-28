@@ -47,7 +47,11 @@ struct ContentView: View {
                         }
                         NavigationLink(destination: CollectionView()) {
                             Text("CollectionViews")
-                        }                    }
+                        }
+                        NavigationLink(destination: AnimationList()) {
+                            Text("Animations")
+                        }
+                    }
                     
                     Spacer()
                     
