@@ -11,6 +11,7 @@ import SwiftUI
 struct ButtonWithAlert: View {
     let buttonName:String
     @State private var showingAlert = false
+    @State private var isShowingDetail = false
     var body: some View {
         Button(action: {
             self.showingAlert = true
@@ -27,7 +28,6 @@ struct ButtonWithAlert: View {
                 }, secondaryButton: .cancel())
         }.background(Color.red)
         .overlay(Rectangle().stroke(Color.black,lineWidth: 1))
-        
     }
 }
 

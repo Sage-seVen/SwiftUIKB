@@ -9,21 +9,28 @@
 import SwiftUI
 
 struct NormalButton: View {
+    @State var isShowing = false
     let buttonName:String
     var body: some View {
-        Button(action: {
-            print("I am a Normal Button : Add Some Action")
-        }) {
-            HStack {
-                Spacer()
-                Text(buttonName)
-                    .font(.title)
-                    .foregroundColor(.black)
-                Spacer()
+        VStack {
+            Button(action: {
+                print("I am a Normal Button : Add Some Action")
+                self.isShowing.toggle()
+            }) {
+                HStack {
+                    Spacer()
+                    Text(buttonName)
+                        .font(.title)
+                        .foregroundColor(.black)
+                    Spacer()
+                }
+            }
+            .background(Color(.orange))
+            .overlay(Rectangle().stroke(Color.black,lineWidth: 2))
+            .sheet(isPresented: $isShowing) {
+                CollectionView()
             }
         }
-        .background(Color(.orange))
-        .overlay(Rectangle().stroke(Color.black,lineWidth: 2))
     }
 }
 
